@@ -1,0 +1,55 @@
+<script type="text/javascript">
+  jQuery(function(){
+    
+    var svgb_collection = new SVGBStages(
+      [{
+        name:'main', 
+        transform:'translate(0,0)', 
+        options: ''
+      }]);
+    var svgb_model = new SVGBFrame({
+        id:'0',
+        height:'500',
+        width:'500',
+        viewbox:'0 0 200 200',
+        options:''
+      });
+    var svgb_view = new SVGBFrameView({ 
+        collection:svgb_collection,
+        model:svgb_model
+      });
+    var svgb_ctrl_cursor_pos = new SVGBControl({
+        name:'mouse_coords',
+        x:0,
+        y:0
+      });
+
+    
+    $("#container").append(svgb_view.render().el);
+  })
+</script>
+
+<%= link_to 'New Frame', new_frame_path %>
+
+<h1>Listing frames</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @frames.each do |frame| %>
+  <tr>
+    <td><%= link_to 'Show', frame %></td>
+    <td><%= link_to 'Edit', edit_frame_path(frame) %></td>
+    <td><%= link_to 'Destroy', frame, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+
+</table>
+
+<div id="container"></div>
+
+<%= render 'layouts/templates' %>

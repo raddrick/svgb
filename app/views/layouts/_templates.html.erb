@@ -1,0 +1,60 @@
+<script type="text/template" id="svgb-frame-template">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="1.1" type="image/svg+xml" class="svgb-frame" height="<@= height @>" 
+    width="<@= width @>" viewBox="<@= viewbox @>"<@= options @>> 
+    
+    <g clip-path="url(#svgb-mask)"></g>
+    <g class="controls"></g>
+    
+    <g class="stages"></g>
+ 
+    <g class="mask" id="svgb-mask"></g>
+    
+    <%= render 'layouts/definitions' %>
+  </svg> 
+</script>
+
+<script type="text/template" id="svgb-stage-template">
+  <g class='<@= name @> stage-data' transform='<@= transform @>' <@= options @>>
+    <g class='<@= name @> active-data'></g>
+    <g class='<@= name @> base-data'></g>
+  </g>
+</script>
+
+<script type="text/template" id="svgb-point">
+  <g transform="translate(<@= x @>,<@= y @>)" class="pin <@= class @>">
+    <circle cx="0" cy="0" r="3" <@= options @> />
+    <circle cx="0" cy="0" r="6" class="btn" />
+    <circle cx="0" cy="0" r="6" class="hit" />
+  </g>  
+</script>
+
+<script type="text/template" id="svgb-path">
+  <path d="<@= d @>" <@= options @>/>
+</script>
+
+<script type="text/template" id="svgb-line">
+  <line x1="<@= x1 @>" y1="<@= y1 @>" x2="<@= x2 @>" y2="<@= y2 @>" <@= options @>/>
+</script>
+
+<script type="text/template" id="svgb-polyline">
+  <polyline points="<@= points @>" <@= options @>/>
+</script>
+
+<script type="text/template" id="svgb-polygon">
+  <polygon points="<@= points @>" <@= options @>/>
+</script>
+
+<script type="text/template" id="svgb-circle">
+  <circle cx="<@= x @>" cy="<@= y @>" r="<@= r @>" <@= options @> />
+</script>
+
+<script type="text/template" id="svgb-rect">
+  <rect x="<@= x @>" y="<@= y @>" width="<@= width @>" height="<@= height @>" <@= options @> />
+</script>
+
+<script type="text/template" id="svgb-elipse">
+  <ellipse cx="<@= cx @>" cy="<@= cy @>" rx="<@= rx @>" ry="<@= ry @>" <@= options @> />
+</script>
+
+<%= render 'layouts/controls' %>

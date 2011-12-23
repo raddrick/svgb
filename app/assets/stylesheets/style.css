@@ -1,0 +1,74 @@
+/* * * * * * * * * * * * * * * * 
+ * 
+ *         HTML BASE CSS
+ * 
+ * * * * * * * * * * * * * * * */
+
+body{ font:1em normal 400 arial; }
+p{ padding:5;margin:5; }
+table{}
+tbody{}
+th{}
+tr{}
+td{}
+h1{}
+h2{}
+h3{}
+h4{}
+h5{}
+strong{}
+em{}
+div{}
+span{}
+ul{}
+ol{}
+li{}
+form{}
+fieldset{}
+legend{}
+label{}
+input{}
+button{}
+textarea{}
+
+/* * * * * * * * * * * * * * * * 
+ * 
+ *         SVG BASE CSS
+ * 
+ * * * * * * * * * * * * * * * */
+
+svg{ 
+  fill:#eeeeee;
+  fill-opacity:1;
+  stroke:none;
+  stroke-opacity:1;
+  stroke-width:1px; }
+desc{}
+title{}
+g{}
+symbol{}
+switch{}
+path{ stroke:#000; }
+line{ stroke:#000; }
+polyline{ stroke:#000; }
+polygon{ fill:#f00; stroke:#000; }
+rect{ fill:#0f0; stroke:#000; }
+circle{ fill:#00f; stroke:#000; }
+ellipse( fill:#f0f; stroke:#000; )
+use{}
+image{}
+
+/* * * * * * * * * * * * * * * * 
+ * 
+ *         SVG 
+ * 
+ * * * * * * * * * * * * * * * */
+
+.btn{
+  fill:#fff;
+  fill-opacity:0;
+}
+.hit{
+  
+}
+
