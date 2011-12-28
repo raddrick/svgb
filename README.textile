@@ -1,8 +1,8 @@
 h1. svgb
 
-h2. A boilerplate for your svg and backbone objects
+h3. A boilerplate for your svg and backbone objects
 
-p. svgb is a boilerplate that bring's SVG, Javascript, and Rails together with Backbone.js, Underscore.js, jQuery/JS and HTML5 driving the clientside.  svgb attempts to lay the ground work for an SVG driven game, advertisment, and other RIA web application. 
+__svgb__ is a boilerplate that bring's SVG, Javascript, and Rails together with Backbone.js, Underscore.js, jQuery/JS and HTML5 driving the clientside.  svgb attempts to lay the ground work for an SVG driven game, advertisment, and other RIA web application. 
 
 *NOTE*
 I think I will be removing the Rails from this project, leaving it purely clientside, and creating an svgb-rails gem to bring it all together..
@@ -42,7 +42,7 @@ bc(.. <script type="text/javascript">
   })
 </script>
 
-bq. @@
+p. 
 
 Templates are defined as such:
 
@@ -50,9 +50,7 @@ bc(.. <script type="text/template" id="svgb-path">
   <path d="<@= d @>" <@= options @>/>
 </script>
 
-bq. @@
-
-Using ==<@ @>== and ==<@= @>== for client side interpolation
+p. Using <@ @> and <@= @> for client side interpolation
 
 h3. Coming down the pipe:
 
@@ -80,7 +78,7 @@ h3. Installation
 
 In a terminal, navigate to your desired install directory and run:
 
-bc(.. $ git clone *fillmein.github.com\svgb.git*
+bc.. $ git clone *fillmein.github.com\svgb.git*
 
 $ cd svgb
 
@@ -90,6 +88,7 @@ $ rake db:create db:migrate
 
 $ rails s
 
+p. 
 
 h3. Operating
 
